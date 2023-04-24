@@ -1,34 +1,57 @@
-* {
-    box-sizing: border-box;
+:root {
+    --primary: #f09b9a;
+    --secondary: #e65b56;
 }
 
-body {
+* {
+    font-family: "Futura PT", sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    /* text-transform: capitalize; */
 }
+
+html {
+    overflow-x: hidden;
+}
+
+/* body {
+
+} */
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: var(--primary);
     color: white;
 }
 
 .brand-title {
+    font-family: "Pacifico", sans-serif;
+    font-size: 2.5rem;
+    margin: 0.5rem 1rem;
+}
+
+.navbar-links {
     font-size: 1.5rem;
-    margin: 0.5rem;
+    display: inline;
+    /* margin: 1rem; */
 }
 
 .navbar-links ul {
     margin: 0;
     padding: 0;
     display: flex;
-
+    margin-right: 1rem;
 }
 
 .navbar-links li {
-    list-style: none ;
+    list-style: none;
+    border-radius: 20px;
 }
 
 .navbar-links li a {
@@ -39,18 +62,18 @@ body {
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+    background-color: var(--secondary);
 }
 
 .toggle-button {
     position: absolute;
-    top: 0.75rem;
+    top: 2rem;
     right: 1rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
-    height: 21px;
+    height: 24px;
 }
 
 .toggle-button .bar {
@@ -60,12 +83,48 @@ body {
     border-radius: 10px;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.container .title {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .products-container {
+
+}
+
 @media (max-width: 768px) {
     .toggle-button {
         display: flex;
     }
     .navbar-links {
-        /* display: none; */
+        display: none;
+        width: 100%;
     }
-    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        text-align: center;
+    }
+    .navbar-links li a {
+        padding: 1rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
 }
