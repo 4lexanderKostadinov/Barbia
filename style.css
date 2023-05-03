@@ -29,7 +29,7 @@ html {
     align-items: center;
     background-color: var(--primary);
     color: var(--white);
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .brand-title {
@@ -48,13 +48,13 @@ html {
     margin: 0;
     padding: 0;
     display: flex;
-    margin-right: 1rem;
+    margin-right: 0rem;
 }
 
 .navbar-links li {
     list-style: none;
     margin: 0 10px;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 .navbar-links li a {
@@ -96,7 +96,7 @@ html {
 }
 
 .container .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 3rem;
     text-transform: uppercase;
     text-align: center;
@@ -156,7 +156,8 @@ html {
     left: 0;
     min-height: 100vh;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
     display: none;
     align-items: center;
     justify-content: center;
@@ -238,7 +239,7 @@ html {
     flex: 1 1 16rem;
     padding: 1rem;
     font-size: 1.8rem;
-    border-radius: 20px;
+    border-radius: 40px;
     color: var(--secondary);
     border: 0.1rem solid #444;
 }
@@ -269,6 +270,7 @@ body {
 .box {
     width: 450px;
     background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
     padding: 40px;
     text-align: center;
     margin: auto;
@@ -286,20 +288,25 @@ body {
 
 .box h1 {
     font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
     letter-spacing: 0.25rem;
-    font-weight: 200;
+    text-shadow: 2px 2px var(--secondary);
 }
 
 .box h3 {
     font-size: 1.75rem;
+    font-weight: 400;
     letter-spacing: 0.125rem;
     margin-bottom: 10px;
+    text-shadow: 1px 1px var(--secondary);
 }
 
 .box p {
     /* text-align: center; */
     font-size: 1.5rem;
     margin-bottom: 20px;
+    text-shadow: 0.5px 0.5px var(--secondary);
 }
 
 .box ul {
@@ -311,6 +318,7 @@ body {
     display: inline-block;
     margin: 20px;
     list-style: none;
+    text-shadow: 2px 2px var(--secondary);
 }
 
 .box li a {
@@ -321,6 +329,7 @@ body {
 
 .box li a:hover {
     color: var(--secondary);
+    text-shadow: 2px 2px var(--white);
 }
 
 @media (max-width: 1024px) {
@@ -359,7 +368,7 @@ body {
     }
 
     .navbar-links li a {
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .navbar-links.active {
