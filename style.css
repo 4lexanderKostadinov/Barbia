@@ -422,7 +422,9 @@ body {
 }
 
 .hero__heading {
+    font-family: "Pacifico", sans-serif;
     font-size: 100px;
+    font-weight: 400;
     margin-bottom: 24px;
     color: #fff;
     text-shadow: 2px 2px var(--secondary);
@@ -610,7 +612,7 @@ body {
     justify-content: center;
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1)4
 }
 
 .main__img--card img {
