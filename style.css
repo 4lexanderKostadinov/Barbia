@@ -128,13 +128,13 @@ html {
     background: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    outline: 0.1rem solid #ccc;
+    /* outline: 0.1rem solid #ccc; */
     outline-offset: -1.5rem;
     cursor: pointer;
 }
 
 .container .products-container .product:hover {
-    outline: 0.2rem solid #222;
+    /* outline: 0.2rem solid #222; */
     outline-offset: 0;
 }
 
@@ -144,7 +144,7 @@ html {
 }
 
 .container .products-container .product:hover img {
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 .container .products-container .product h3 {
@@ -283,7 +283,7 @@ body {
 
 .box {
     width: 450px;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     padding: 40px;
     text-align: center;
@@ -301,26 +301,30 @@ body {
 }
 
 .box h1 {
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 700;
     font-style: italic;
     letter-spacing: 0.25rem;
+    color: white;
     text-shadow: 2px 2px var(--secondary);
 }
 
 .box h3 {
-    font-size: 1.75rem;
-    font-weight: 400;
+    font-size: 2.25rem;
+    font-weight: 600;
     letter-spacing: 0.125rem;
     margin-bottom: 10px;
-    text-shadow: 1px 1px var(--secondary);
+    color: white;
+    text-shadow: 1.25px 1.25px var(--secondary);
 }
 
 .box p {
     /* text-align: center; */
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 400;
     margin-bottom: 20px;
-    text-shadow: 0.5px 0.5px var(--secondary);
+    color: white;
+    text-shadow: 1px 1px var(--secondary);
 }
 
 .box ul {
@@ -336,14 +340,14 @@ body {
 }
 
 .box li a {
-    color: var(--white);
+    color: white;
     text-decoration: none;
     font-size: 4rem;
 }
 
 .box li a:hover {
     color: var(--secondary);
-    text-shadow: 2px 2px var(--white);
+    text-shadow: 2px 2px white;
 }
 
 @media (max-width: 1024px) {
@@ -406,7 +410,7 @@ body {
 }
 
 .hero {
-    padding: 200px 0;
+    padding: 100px 0;
 }
 
 .hero__container {
@@ -491,7 +495,7 @@ body {
 /* About Section */
 .main {
     /* background-color: #131313; */
-    padding: 10rem 0;
+    padding: 10px 0;
 }
 
 .main__container {
@@ -612,7 +616,7 @@ body {
     justify-content: center;
     color: #fff;
     background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1)4
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) 4;
 }
 
 .main__img--card img {
